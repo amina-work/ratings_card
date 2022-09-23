@@ -1,0 +1,45 @@
+//variables
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+//General
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: $veryDarkBlue;
+    color: $white;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* The Rating card */
+.rating{
+    padding: 33px;
+    width: 412px;
+    background-image: linear-gradient($darkBlue, $mediumGrey);
+    &__container{
+        .star-icon img{
+            background-color: $darkBlue;
+            padding: 15px;
+            border-radius: 50%;
+        }
+    }
+}
+
+/* The Thank you card */
+.thankyou{
+    display: none;
+}
