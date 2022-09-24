@@ -36,12 +36,60 @@ body p {
 /* Rating state */
 .main__container img {
   background-color: hwb(213 15% 78%);
-  padding: 0.5rem;
+  padding: 15px;
   border-radius: 50%;
 }
 .main__container h1 {
   color: hsl(0deg, 0%, 100%);
   margin: 2rem 0 1rem;
+}
+.main__container p {
+  color: hsl(217deg, 12%, 63%);
+  margin-bottom: 1rem;
+}
+.main__container ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.main__container ul li button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hwb(213 15% 78%);
+  color: hsl(217deg, 12%, 63%);
+  padding-top: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.main__container ul li button:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.main__container ul li button:focus {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.main__container .btn-submit {
+  background-color: hsl(25deg, 97%, 53%);
+  width: 100%;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.main__container .btn-submit:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
 }
 
 /* Thank you state */
