@@ -1,33 +1,48 @@
+/* Variables */
+/* General */
 * {
   margin: 0;
   padding: 0;
-  border: none;
   box-sizing: border-box;
 }
 
 body {
-  background: hsl(216deg, 12%, 8%);
-  color: hsl(0deg, 0%, 100%);
-  font-size: 15px;
+  background-color: hsl(216deg, 12%, 8%);
   font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  margin: 1.5rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body button {
+  font-family: inherit;
+}
+body ul {
+  list-style-type: none;
+}
+body p {
+  line-height: 1.8;
 }
 
-/* The Rating card */
-.rating {
-  padding: 33px;
-  width: 412px;
-  background-image: linear-gradient(hsl(213deg, 19%, 18%), hsl(216deg, 12%, 54%));
+.main__container, .thank-you {
+  background-image: linear-gradient(rgb(41, 53, 67), hsl(223deg, 19%, 14%));
+  padding: 1.5rem;
+  border-radius: 0.625rem;
 }
-.rating__container .star-icon img {
-  background-color: hsl(213deg, 19%, 18%);
-  padding: 15px;
+
+/* Rating state */
+.main__container img {
+  background-color: hwb(213 15% 78%);
+  padding: 0.5rem;
   border-radius: 50%;
 }
+.main__container h1 {
+  color: hsl(0deg, 0%, 100%);
+  margin: 2rem 0 1rem;
+}
 
-/* The Thank you card */
-.thankyou {
-  display: none;
-}/*# sourceMappingURL=styles.css.map */
+/* Thank you state */
+/* Attribution *//*# sourceMappingURL=styles.css.map */

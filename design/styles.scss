@@ -1,45 +1,63 @@
-//variables
+/* Variables */
 $orange: hsl(25, 97%, 53%);
 $white: hsl(0, 0%, 100%);
 $lightGrey: hsl(217, 12%, 63%);
 $mediumGrey: hsl(216, 12%, 54%);
-$darkBlue: hsl(213, 19%, 18%);
+$darkBlue: hwb(213 15% 78%);
 $veryDarkBlue: hsl(216, 12%, 8%);
 
-//General
+/* General */
 *{
     margin: 0;
     padding: 0;
-    border: none;
     box-sizing: border-box;
 }
-
 body{
-    background: $veryDarkBlue;
-    color: $white;
-    font-size: 15px;
+    background-color: $veryDarkBlue;
     font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    margin: 1.5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
+    justify-content: center;
+    min-height: 100vh;
 
+    button{
+        font-family: inherit;
+    }
+    
+    ul{
+        list-style-type: none;
+    }
 
-/* The Rating card */
-.rating{
-    padding: 33px;
-    width: 412px;
-    background-image: linear-gradient($darkBlue, $mediumGrey);
-    &__container{
-        .star-icon img{
-            background-color: $darkBlue;
-            padding: 15px;
-            border-radius: 50%;
-        }
+    p{
+        line-height: 1.8;
     }
 }
 
-/* The Thank you card */
-.thankyou{
-    display: none;
+.main__container, .thank-you{
+    background-image: linear-gradient(rgb(41, 53, 67), hsl(223, 19%, 14%));
+    padding: 1.5rem;
+    border-radius: 0.625rem;
 }
+
+/* Rating state */
+.main__container{
+    img{
+        background-color: $darkBlue;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+    h1{
+        color: $white;
+        margin: 2rem 0 1rem;
+    }
+}
+
+
+/* Thank you state */
+
+
+
+/* Attribution */
