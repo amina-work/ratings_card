@@ -93,4 +93,45 @@ body p {
 }
 
 /* Thank you state */
-/* Attribution *//*# sourceMappingURL=styles.css.map */
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thank-you img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+.thank-you p.gray {
+  color: hsl(25deg, 97%, 53%);
+  background-color: #272d39;
+  border-radius: 30px;
+  padding: 7px 18px 4px;
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+.thank-you h2 {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.thank-you p {
+  color: hsl(217deg, 12%, 63%);
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(217deg, 12%, 63%);
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
