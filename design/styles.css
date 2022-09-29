@@ -28,9 +28,10 @@ body p {
 }
 
 .main__container, .thank-you {
-  background-image: linear-gradient(rgb(41, 53, 67), hsl(223deg, 19%, 14%));
+  background-image: linear-gradient(#212830, #171e28);
   padding: 1.5rem;
-  border-radius: 0.625rem;
+  border-radius: 20px;
+  max-width: 412px;
 }
 
 /* Rating state */
